@@ -1,3 +1,97 @@
+html {
+    font-size: 62.5%;
+}
+
+/* .has-child-selected .editor-inner-blocks.block-editor-inner-blocks {
+    padding: 14px 14px;
+} */
+
+
+/* 
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/column"].has-child-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks, 
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/column"].is-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks, 
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/columns"].has-child-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks, 
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/columns"].is-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks {
+
+} */
+
+
+
+/*--------------------------------------------------------------
+# IMAGE FIX
+--------------------------------------------------------------*/
+/* .wp-block-image,
+.wp-block-image > div:first-child,
+[data-type="wtp/block-media"]
+,[data-type="wtp/block-media"] > .editor-block-list__block-edit
+,[data-type="wtp/block-media"] > .editor-block-list__block-edit > div
+,[data-type="wtp/block-media"] .wp-block-wtp-block-media
+,[data-type="wtp/block-media"] .wp-block-wtp-block-media > .editor-inner-blocks
+,[data-type="wtp/block-media"] .wp-block-wtp-block-media > .editor-inner-blocks > .editor-block-list__layout
+,[data-type="wtp/block-media"] [data-type="core/image"]
+,[data-type="wtp/block-media"] [data-type="core/image"] .editor-block-list__block-edit
+,[data-type="wtp/block-media"] [data-type="core/image"] .editor-block-list__block-edit > div
+ { 
+    height: 100%; 
+     border: 1px solid red;
+} */
+
+/* .components-resizable-box__container {
+    width: 100% !important;
+    height: 100% !important;
+} */
+
+/*--------------------------------------------------------------
+# EDIT VIEW
+--------------------------------------------------------------*/
+
+/* remove margin when not selected */
+/* .editor-styles-wrapper [data-block] {
+    margin-top: 0;
+    margin-bottom: 0;
+} */
+
+/* reset to original setting */
+/* .editor-styles-wrapper .has-child-selected [data-block] {
+    margin-top: 14px;
+    margin-bottom: 14px;
+} */
+
+/*--------------------------------------------------------------
+# PREVIEW WIDTH FIX
+--------------------------------------------------------------*/
+/* .components-placeholder__preview img {
+    margin: initial;
+} */
+
+/*--------------------------------------------------------------
+# ALIGN FIX
+--------------------------------------------------------------*/
+/* .wp-block {
+    max-width: var(--max-width-3);
+}
+
+.wp-block[data-align="wide"]  {
+    max-width: var(--max-width-2);
+}
+ 
+.wp-block[data-align="full"] {
+    max-width: var(--max-width);
+}
+
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
+    max-width: none;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=full] {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
 /*--------------------------------------------------------------
 # FONT SIZES
 --------------------------------------------------------------*/
