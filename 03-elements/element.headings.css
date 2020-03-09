@@ -27,3 +27,8 @@ h6 {
     font-size: var(--font-size-6);
     line-height: var(--line-height-6);
 }
+
+
+blockquote {
+    margin: 0;
+}
