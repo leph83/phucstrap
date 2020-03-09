@@ -48,6 +48,9 @@ textarea {
 	width: 100%;
 }
 
+strong, b {
+    font-weight: 700;
+}
 
 ul, ol, dl, p {
     margin: 0;
