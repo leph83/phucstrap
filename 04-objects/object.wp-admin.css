@@ -86,7 +86,7 @@ html {
 /*--------------------------------------------------------------
 # ALIGN FIX
 --------------------------------------------------------------*/
-/* .wp-block {
+.wp-block {
     max-width: var(--max-width-3);
 }
 
@@ -106,7 +106,7 @@ html {
 .block-editor-block-list__layout .block-editor-block-list__block[data-align=full] {
     margin-left: auto;
     margin-right: auto;
-} */
+}
 
 /*--------------------------------------------------------------
 # FONT SIZES
