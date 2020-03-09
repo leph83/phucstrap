@@ -39,49 +39,29 @@ html {
 /*--------------------------------------------------------------
 # IMAGE FIX
 --------------------------------------------------------------*/
-/* .wp-block-image,
-.wp-block-image > div:first-child,
-[data-type="wtp/block-media"]
-,[data-type="wtp/block-media"] > .editor-block-list__block-edit
-,[data-type="wtp/block-media"] > .editor-block-list__block-edit > div
-,[data-type="wtp/block-media"] .wp-block-wtp-block-media
-,[data-type="wtp/block-media"] .wp-block-wtp-block-media > .editor-inner-blocks
-,[data-type="wtp/block-media"] .wp-block-wtp-block-media > .editor-inner-blocks > .editor-block-list__layout
-,[data-type="wtp/block-media"] [data-type="core/image"]
-,[data-type="wtp/block-media"] [data-type="core/image"] .editor-block-list__block-edit
-,[data-type="wtp/block-media"] [data-type="core/image"] .editor-block-list__block-edit > div
- { 
+.wp-block-image
+, .wp-block-image > div:first-child
+,[data-type="wtp/block-media"]:not(.has-child-selected)
+,[data-type="wtp/block-media"]:not(.has-child-selected) > .editor-block-list__block-edit
+,[data-type="wtp/block-media"]:not(.has-child-selected) > .editor-block-list__block-edit > div
+,[data-type="wtp/block-media"]:not(.has-child-selected) .wp-block-wtp-block-media
+,[data-type="wtp/block-media"]:not(.has-child-selected) .wp-block-wtp-block-media > .editor-inner-blocks
+,[data-type="wtp/block-media"]:not(.has-child-selected) .wp-block-wtp-block-media > .editor-inner-blocks > .editor-block-list__layout
+,[data-type="wtp/block-media"]:not(.has-child-selected) [data-type="core/image"]
+,[data-type="wtp/block-media"]:not(.has-child-selected) [data-type="core/image"] .editor-block-list__block-edit
+,[data-type="wtp/block-media"]:not(.has-child-selected) [data-type="core/image"] .editor-block-list__block-edit > [data-block] { 
     height: 100%; 
-     border: 1px solid red;
-} */
+}
 
-/* .components-resizable-box__container {
+[data-type="wtp/block-media"]:not(.has-child-selected) .components-resizable-box__container {
     width: 100% !important;
     height: 100% !important;
-} */
+    max-height: none !important;
+}
 
-/*--------------------------------------------------------------
-# EDIT VIEW
---------------------------------------------------------------*/
-
-/* remove margin when not selected */
-/* .editor-styles-wrapper [data-block] {
-    margin-top: 0;
-    margin-bottom: 0;
-} */
-
-/* reset to original setting */
-/* .editor-styles-wrapper .has-child-selected [data-block] {
-    margin-top: 14px;
-    margin-bottom: 14px;
-} */
-
-/*--------------------------------------------------------------
-# PREVIEW WIDTH FIX
---------------------------------------------------------------*/
-/* .components-placeholder__preview img {
-    margin: initial;
-} */
+[data-type="wtp/block-media"].is-selected .editor-block-list__block-edit {
+    height: auto !important;
+}
 
 /*--------------------------------------------------------------
 # ALIGN FIX
