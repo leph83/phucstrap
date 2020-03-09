@@ -2,23 +2,39 @@ html {
     font-size: 62.5%;
 }
 
-/* .has-child-selected .editor-inner-blocks.block-editor-inner-blocks {
-    padding: 14px 14px;
-} */
+.editor-styles-wrapper {
+    font-family: var(--font-family);
+    font-size: var(--font-size)
+}
 
+/*--------------------------------------------------------------
+# ADMIN EDITOR STYLE RESET
+--------------------------------------------------------------*/
+.edit-post-visual-editor [data-type*="wtp/"] {
+    padding-left: 14px;
+    padding-right: 14px;
+}
 
-/* 
-.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/column"].has-child-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks, 
+.edit-post-visual-editor [data-type*="wtp/"] .block-editor-block-list__block-edit
+, [data-type*="wtp/"] .editor-block-list__layout
+, [data-type*="wtp/"] .block-list-appender
+, [data-type*="wtp/"] [data-block] {
+    margin: initial;
+}
 
-.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/column"].is-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks, 
+[data-type*="wtp/"] .block-editor-block-list__layout .block-editor-block-list__block {
+    padding: initial;
+}
 
-.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/columns"].has-child-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks, 
+[data-type*="wtp/"] [data-type] {
+    width: 100%;
+}
 
-.block-editor-block-list__layout .block-editor-block-list__block[data-type="core/columns"].is-selected>.block-editor-block-list__block-edit>[data-block]>div>.block-editor-inner-blocks {
-
-} */
-
-
+/* SELECTED */
+[data-type*="wtp/"].is-selected .block-editor-block-list__layout .block-editor-block-list__block
+, [data-type*="wtp/"].has-child-selected .block-editor-block-list__layout .block-editor-block-list__block {
+    padding: 14px;
+}
 
 /*--------------------------------------------------------------
 # IMAGE FIX
